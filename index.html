@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio Digital</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cardápio</h1>
+    </header>
+
+    <div class="filtros">
+        <!-- <input type="text" id="search" placeholder="Buscar no cardápio..." onkeyup="buscarItem()"> -->
+        <!-- <button onclick="filtrarCategoria('todas')">Inicio</button> -->
+        <button onclick="filtrarCategoria('entradas')">Entradas</button>
+        <button onclick="filtrarCategoria('nigiri')">Nigiri</button>
+        <button onclick="filtrarCategoria('sashimis')">Sashimi</button>
+        <button onclick="filtrarCategoria('temakis')">Temaki</button>
+        <button onclick="filtrarCategoria('uramaki')">Uramaki</button>
+        <button onclick="filtrarCategoria('bebidas')">Bebidas</button>
+    </div>
+
+    <main>
+        <section class="categoria" id="entradas">
+            <h2>Entradas</h2>
+            <div id="entradas-container"></div> 
+        </section>
+        
+        <section class="categoria" id="nigiri">
+            <h2>Nigiri</h2>
+            <div id="nigiri-container"></div>
+        </section>
+        
+        <section class="categoria" id="bebidas">
+            <h2>Bebidas</h2>
+            <div id="bebidas-container"></div>
+        </section>
+        
+        <section class="categoria" id="sashimis">
+            <h2>Sashimis</h2>
+            <div id="sashimis-container"></div>
+        </section>
+
+        <section class="categoria" id="temakis">
+            <h2>Temakis</h2>
+            <div id="temakis-container"></div>
+        </section>
+
+        <section class="categoria" id="uramaki">
+            <h2>Uramaki</h2>
+            <div id="uramaki-container"></div>
+        </section>
+        
+        
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
